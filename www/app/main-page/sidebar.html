@@ -26,7 +26,7 @@
 				</a>
 				<ul class="nav sub-menu" ng-show="subMenu==='paint'">
 					<li ng-repeat="metric in sidebar.categories.paint">
-						<a ng-href="#/detail/{{pagename}}/{{browser}}/{{metric}}">
+						<a ng-href="#/detail?pagename={{pagename}}&browser={{browser}}&metric={{metric}}">
 							<span class="icon-paintbucket"></span>
 							{{metric | formatMetric}}
 						</a>
